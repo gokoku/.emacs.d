@@ -313,7 +313,8 @@
      (java . t)
      (awk . t)))
   :custom
-  ((org-babel-js-cmd . "/Users/george/.asdf/shims/node")))
-
+  ((org-babel-js-cmd . "/Users/george/.asdf/shims/node")
+   (org-babel-js-function-wrapper .
+      "console.log(require('util').inspect(function(){\n%s\n}(), { depth: 100 }))")))
 
 (provide 'init)
