@@ -26,3 +26,9 @@ projectile-bookmarks.eld
 .mc-lists.el
 elpa/
 *.elc
+custom.el
+eshell/
+init.el.old
+var/
+.org*
+.recentf
