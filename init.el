@@ -298,8 +298,6 @@
   :ensure t
   :require t)
 
-
-
 ;; Org mode
 (leaf org-babel
   :config
@@ -313,6 +311,7 @@
      (shell . t)
      (js . t)
      (java . t)
+     (clojure . t)
      (awk . t)))
   :custom
   ((org-babel-js-cmd . "/Users/george/.asdf/shims/node")
