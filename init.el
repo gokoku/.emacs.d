@@ -97,8 +97,10 @@
 
 
 
+
 (leaf leaf
   :config
+  
   (leaf leaf-convert :ensure t)
   (leaf leaf-tree
     :ensure t
@@ -317,4 +319,17 @@
    (org-babel-js-function-wrapper .
       "console.log(require('util').inspect(function(){\n%s\n}(), { depth: 100 }))")))
 
+(leaf exec-path-from-shell
+  :doc "Get environment variables such as $PATH from the shell"
+  :req "emacs-24.1"
+  :tag "environment" "unix" "emacs>=24.1"
+  :added "2020-08-27"
+  :url "https://github.com/purcell/exec-path-from-shell"
+  :emacs>= 24.1
+  :ensure t)
+
 (provide 'init)
+
+
+(exec-path-from-shell-initialize)
+(server-start)
