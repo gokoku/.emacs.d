@@ -328,7 +328,3 @@
   :ensure t)
 
 (provide 'init)
-
-
-(exec-path-from-shell-initialize)
-(server-start)
