@@ -329,6 +329,7 @@
 
 (provide 'init)
 
+(load (expand-file-name "~/.roswell/helper.el"))
 
 (exec-path-from-shell-initialize)
-(server-start)
+

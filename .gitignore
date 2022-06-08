@@ -32,3 +32,4 @@ init.el.old
 var/
 .org*
 .recentf
+session*
