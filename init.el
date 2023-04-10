@@ -149,6 +149,13 @@
   (c++-mode-hook . ((c-set-style "bsd")
                     (setq c-basic-offset 4))))
 
+(leaf cider-mode
+  :doc "major mode for editing clojure"
+  :tag "builtin"
+  :mode-hook
+  (add-hook 'clojure-mode-hook #'cider-mode #'paredit-mode)
+)
+
 (leaf delsel
   :doc "delete selection if you insert"
   :tag "builtin"
@@ -289,6 +296,7 @@
   :bind ("C-c C-f" . recentf-open-files)
   :require t
   )
+
 
 (leaf recentf-ext
   :doc "Recentf extensions"
