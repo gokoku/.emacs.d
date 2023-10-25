@@ -282,10 +282,6 @@
   :added "2021-09-07")
 
 
-(leaf auto-async-byte-compile
-  :hook ((emacs-lisp-mode-hook . enable-auto-async-byte-compile-mode))
-  :require t)
-
 (leaf recentf
   :doc "setup a menu of recently opened files"
   :tag "builtin"
@@ -335,8 +331,11 @@
   :emacs>= 24.1
   :ensure t)
 
+
+  
+
 (provide 'init)
 
-(load (expand-file-name "~/.roswell/helper.el"))
+;(load (expand-file-name "~/.roswell/helper.el"))
 
 (exec-path-from-shell-initialize)
